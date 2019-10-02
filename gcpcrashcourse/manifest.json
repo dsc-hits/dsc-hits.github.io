@@ -25,7 +25,7 @@
       }
     ],
     "scope":"/",
-    "start_url": "/gcpcrashcourse/index.html",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#4D95FB"
