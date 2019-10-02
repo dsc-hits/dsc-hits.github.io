@@ -1,4 +1,4 @@
-var cacheName = 'GCPCrashCourse';
+var cacheName = 'CSJwithDSCHITS';
 var filesToCache = [
   '/',
   '/index.html',
