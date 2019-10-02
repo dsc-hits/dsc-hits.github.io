@@ -24,8 +24,8 @@
         "type": "image/png"
       }
     ],
-    "scope":"/app/",
-    "start_url": "/app/",
+    "scope":"/",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#4D95FB"
