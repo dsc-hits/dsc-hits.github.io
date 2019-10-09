@@ -27,8 +27,9 @@
 
     <!-- Adding PWA Capabilities -->
     <link rel="manifest" href="manifest.json">
-
-    <script>
+	
+    
+	<script>
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('./sw.js')
             .then(function() {
@@ -39,6 +40,35 @@
 
 </head>
 <body>
+	<script>
+		$(document).ready(function(){
+			$("#announcement").modal('show');
+		});
+	</script>
+
+	<!-- Announcement Modal -->
+        <div class="modal fade" id="announcement" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">Important! For Machine Learning Track</h2>
+              </div>
+              <div class="modal-body">
+                <p>One of the labs belonging to the quest <span style="font-weight:bold">Intermediate ML: TensorFlow on GCP</span> in the Machine Learning tracks is under maintenance. We request all participants to kindly proceed with an alternate lab which is provided here. </p>
+                <ul>
+                  <li><a href="https://google.qwiklabs.com/focuses/7639?parent=catalog">Learning TensorFlow: the Hello World of Machine Learning</a></li>
+                </ul>
+				<p>Please note: This is not a full quest. It is only a lab.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+	
 
     <!-- Landing section -->
     <div class="main">
@@ -47,12 +77,13 @@
 
             <!-- Heading -->
             <h1>#GCPCrashCourse</h1>
+			<h4 style="text-align:center">Oct 1 to 31</h4>
 
             <!-- DSC Logo -->
-            <div class="dsc-logo"></div>
+            <div class="dsc-logo"></div><br/>
 
             <!-- Know More Button -->
-            <div class="know-more-button">Know More</div>
+            <div class=button> <span class="know-more-button"> Know More</span> <span class="faq-button" onclick="window.open('faq.html')">FAQs</span> </div>
 
         </div>
 
@@ -174,6 +205,12 @@
                   <li><a href="https://google.qwiklabs.com/quests/83?qlcampaign=6p-EDU-DSC-GCC-31">Intermediate ML: TensorFlow on GCP</a></li>
                   <li><a href="https://google.qwiklabs.com/quests/32?qlcampaign=6p-EDU-DSC-GCC-31">Machine Learning APIs</a></li>
                 </ul>
+				<br/>
+				 <p>One of the labs belonging to the quest <span style="font-weight:bold">Intermediate ML: TensorFlow on GCP</span> in the Machine Learning tracks is under maintenance. We request all participants to kindly proceed with an alternate lab which is provided here. </p>
+                <ul>
+                  <li><a href="https://google.qwiklabs.com/focuses/7639?parent=catalog">Learning TensorFlow: the Hello World of Machine Learning</a></li>
+                </ul>
+				<p>Please note: This is not a full quest. It is only a lab.</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -248,8 +285,7 @@
             </div>
 
         </div>
-		<div class="faq-button" onclick="window.open('faq.html')">FAQs</div>
-
+		
     </div>
 	
 
