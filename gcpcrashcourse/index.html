@@ -1,0 +1,281 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title of the webpage -->
+    <title>#GCPCrashCourse at DSC HITS</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet">
+
+    <!-- Linking Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Linking bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Linking CSS Files -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Linking bootstrap CSS Files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Linking JS Files -->
+    <script src="js/index.js"></script>
+
+    <!-- Adding PWA Capabilities -->
+    <link rel="manifest" href="manifest.json">
+	
+    
+	<script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function() {
+                  console.log('Service Worker Registered');
+            });
+        }
+    </script>
+
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#announcement").modal('show');
+		});
+	</script>
+
+	<!-- Announcement Modal -->
+        <div class="modal fade" id="announcement" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content  -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">Thank you taking part in #GCPCrashCourse</h2>
+              </div>
+              <div class="modal-body">
+                <p>The course has ended officially! You have time to fill in the form on November 1, from 3PM to 8PM </p>
+
+                  <p>Fill up the task completion form <a href="http://bit.ly/CSJwithDSCHITS">here</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+	
+
+    <!-- Landing section -->
+    <div class="main">
+
+        <div class="main-content-holder">
+
+            <!-- Heading -->
+            <h1>#GCPCrashCourse</h1>
+			<h4 style="text-align:center">Oct 1 to 31</h4>
+
+            <!-- DSC Logo -->
+            <div class="dsc-logo"></div><br/>
+
+            <!-- Know More Button -->
+            <div class=button> <span class="know-more-button"> Know More</span> <span class="faq-button" onclick="window.open('faq.html')">FAQs</span> </div>
+
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+
+   <div class="main-about">
+
+        <!-- About Section -->
+        <div style="padding-bottom: 40px;">
+
+            <!-- About Section Heading -->
+            <h1>About #GCPCrashCourse</h1>
+
+            <!-- About Section Paragraph -->
+            <p>Ever thought of learning about Google Cloud Platform? We've got you covered. DSC HITS in collaboration with Developer Student Clubs and Qwiklabs brings to you #GCPCrashCourse, the best way to get started with Google Cloud Platform.</p>
+
+        </div>
+
+
+ <!--         Tracks Section -->
+     <div style="padding-bottom: 60px;">
+
+
+            <h1>Congrats to all participants who completed the course</h1>
+
+
+            <p>See our quest leaders below</p>
+
+
+            <div class="main-about-icon">
+
+                <div class="icon-holder">
+                    <div class="icon data" data-toggle="modal" data-target="#DataModal"></div>
+                    <div class="icon-text">Data Science</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon android" data-toggle="modal" data-target="#AppModal"></div>
+                    <div class="icon-text">App Development</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon ml" data-toggle="modal" data-target="#MLModal"></div>
+                    <div class="icon-text">Machine Learning</div>
+                </div>
+
+            </div>
+
+        </div>
+		
+
+
+        <div class="modal fade" id="DataModal" role="dialog">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Data Science track</h4>
+              </div>
+              <div class="modal-body">
+                <p>Cloud Data Science geeks</p>
+                <ul>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/3dbfee4d-2085-49f2-a777-64328f66dc43">Samitha Ramesh Babu</a></li>
+                    <li><a href="https://www.qwiklabs.com/public_profiles/eda053da-a264-4c9a-a324-419ba01429d4">Arvinth Sitharthaa</a></li>
+                    <li> <a href="https://google.qwiklabs.com/public_profiles/5b487782-1b4e-44f5-a4cf-b4cb18adeb8a">Sandeep E N</a></li>
+
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="AppModal" role="dialog">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Application Development track</h4>
+              </div>
+              <div class="modal-body">
+                <p>Cloud App Dev geeks</p>
+                <ul>
+                    <li><a href="https://www.qwiklabs.com/public_profiles/2c724185-3631-4081-b442-333c88a1c2cf">Vishnu Kalyan</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/05737ca7-2bad-41d8-817c-fea8891b867e">Dhanumaalaian R</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/0eddd5f2-79a5-4f9f-a9db-531d888bea3d">Ganesh Raghav M</a></li>
+                    <li><a href="https://www.qwiklabs.com/public_profiles/417b00ad-8e70-402f-81be-3a6b7e08f205">Paventhan</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="MLModal" role="dialog">
+          <div class="modal-dialog">
+
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Machine Learning track</h4>
+              </div>
+              <div class="modal-body">
+                <p>Cloud ML geeks</p>
+                <ul>
+                    <li><a href="https://www.qwiklabs.com/public_profiles/24711c69-a63e-45eb-ae02-6f6b8740bbef">Shyam Chandrasekar</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/4cd083da-0d33-4bec-b04b-c12c25807a27">Prateek Jena</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/36827f2a-9c47-4c1f-9e0f-89820dab766a">Naveen S</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/3dbfee4d-2085-49f2-a777-64328f66dc43">Wajahat Rafiq</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/f5a4af8e-363d-42ee-8bce-593a2644237e">Manoj</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/644cad76-b05d-4458-88f1-3f888925a64a">Jayadev V</a>a</li>
+                    <li><a href="https://www.qwiklabs.com/public_profiles/bafd854c-1f91-469a-9cf3-53a0299fcc24">Kanchana Siva Sai Kumar Reddy</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/6fb90d8d-53b8-41a1-8347-80ff30a27948">Praveen S</a></li>
+                    <li><a href="https://www.qwiklabs.com/public_profiles/59bc4301-bb8f-477d-89a1-8be4a957cea1">Akash M</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/e5b3ce3f-ea44-4ad9-9246-6e3e28c65a83">Ajay R</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/3f93c2d9-fb07-43df-8533-7ec2a93d54b8">Ashwin R</a></li>
+                    <li><a href="https://google.qwiklabs.com/public_profiles/50bd19cd-d1d9-482a-ac94-cf671f23b84f">Akshay R</a></li>
+
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+-->
+
+        <!-- Rewards section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Rewards Section Heading -->
+            <h1>Nothing's fun without rewards</h1>
+
+            <!-- Rewards Section Pargraph -->
+            <p>Any one who completes at least one Track in this month is eligible for Goodies</p>
+
+            <!-- Rewards Section Icons -->
+            <div class="main-about-icon">
+
+                <div class="icon-holder">
+                    <div class="icon hoodie"></div>
+                    <div class="icon-text">Hoodies</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon pen"></div>
+                    <div class="icon-text">Schwags</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon certificate"></div>
+                    <div class="icon-text">Certification</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Steps section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Steps Section Heading -->
+            <h1>What next?</h1>
+
+            <!-- Steps Section Pargraph -->
+            <p>If you've completed the course</p>
+
+            <!-- Steps Section Icons -->
+            <div class="main-about-icon">
+
+                <div class="icon-holder-two">
+                    <div class="icon-two step-one"></div>
+                    <div class="icon-text-two">Ensure you filled the <a href="http://bit.ly/CSJwithDSCHITS" style="font-weight:bold" target="_blank">task completion form</a></div>
+                </div>
+
+                <div class="icon-holder-two">
+                    <div class="icon-two step-two"></div>
+                    <div class="icon-text-two">Let's celebrate.Tweet after you receive goodies. Tag us <span style="font-weight:bold">@dsc_hits @GoogleDevsIN #GCPCrashCourse #CSJwithDSCHITS #DSCHITS #DeveloperStudentClubs #DSCIndia #CloudStudyJams19 #GoogleCloud</span></div>
+                </div>
+            </div>
+
+        </div>
+		
+    </div>
+	
+
+ 
+</body>
+</html>
