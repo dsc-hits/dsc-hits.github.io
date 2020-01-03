@@ -124,6 +124,7 @@ body{
     margin:auto auto;
 }
 
+
 .main-about-icon{
     text-align: center;
 }
@@ -187,63 +188,28 @@ li {
     transform: scale(1.1);
 }
 
-.icon-text{
-    font-size: 1em;
+.icon-text-two{
+    font-size: 1.1em;
     color: #141414;
     text-align: center;
     letter-spacing: 0.07em;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
-.hoodie{
-    background: url('../images/Hoodie.svg') center center;
-    background-size: cover;
+.icon-text-name{
+    font-size: 1.5em;
+    color: #141414;
+    text-align: center;
+    letter-spacing: 0.07em;
+    margin-top: 10px;
 }
 
-.pen{
-    background: url('../images/Pen.svg') center center;
-    background-size: cover;
-}
-
-.certificate{
-    background: url('../images/Certification.svg') center center;
-    background-size: cover;
-}
-
-.data{
-    background: url('../images/Data.svg') center center;
-    background-size: cover;
-}
-
-.android{
-    background: url('../images/Android.svg') center center;
-    background-size: cover;
-}
-
-.ml{
-    background: url('../images/ML.svg') center center;
-    background-size: cover;
-}
 
 .step-one{
-    background: url('../images/one.png') center center;
+    background: url('../images/fac.png') center center;
     background-size: cover;
 }
 
-.step-two{
-    background: url('../images/two.png') center center;
-    background-size: cover;
-}
-
-.step-three{
-    background: url('../images/three.png') center center;
-    background-size: cover;
-}
-
-.step-four{
-    background: url('../images/four.png') center center;
-    background-size: cover;
-}
 
 /* Media Queries */
 
