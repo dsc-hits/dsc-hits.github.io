@@ -245,6 +245,10 @@ body a {
     color: #000;
     letter-spacing: 1px;
 }
+.ban-head p {
+    padding-left: 60px;
+    padding-right: 60px;
+}
 .ban-head h1 {
     font-size: 4em;
     color: #000;
@@ -487,8 +491,6 @@ a {
     }
     .ban-head p {
         font-size: 0.8em;
-	padding-left: 20px;
-	padding-right: 20px;
         overflow-x: hidden;
     }
 }
