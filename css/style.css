@@ -217,7 +217,8 @@ body {
 	font-family: 'Google Sans', sans-serif;
 	font-size: 100%;
 	background-attachment: fixed;
-	text-align: center;
+    text-align: center;
+    overflow-x: hidden;
 }
 
 body a {
@@ -228,10 +229,15 @@ body a {
 	-ms-transition: 0.5s all;
 }
 
+.containered {
+    width: 100%;
+}
+
 /*--banner--*/
 .ban-head {
     margin: -5em;
     padding-bottom: 20px;
+    overflow-x: hidden;
     
 }
 .ban-head h2 {
@@ -259,9 +265,6 @@ body a {
 .dsc-logo {
     margin-bottom: 25px;
     max-width: 100%;
-}
-.dsc-logo {
-    margin-bottom: 25px;
 }
 /*--//banner--*/
 /*-- social-icons --*/
@@ -354,6 +357,7 @@ a {
 .sponsor-title {
     font-size: 1.2em;
     color:#8a8a8a
+
 }
 
 /*-- //footer --*/
@@ -382,84 +386,108 @@ a {
 }
 @media(max-width:736px){
 	.ban-head {
-    margin: 3em 0 0 0;
-}
+        margin: 3em 0 0 0;
+        overflow-x: hidden;
+    }
 }
 @media(max-width:667px){
 	.ban-head h1 {
-    font-size: 3.5em;
-    letter-spacing: 7px;
-}
-.simply-section {
-    padding: 7% 0%;
-}
-.newsletter input[type="text"] {
-    width: 50%;
-}
-.examples {
-    margin: 2em auto 0;
-}
+        font-size: 3.5em;
+        letter-spacing: 7px;
+        overflow-x: hidden;
+    }
+
 }
 @media(max-width:640px){
 	.ban-head h1 {
     font-size: 3em;
     letter-spacing: 7px;
+    overflow-x: hidden;
 }
 }
 @media(max-width:600px){
 
 }
 @media(max-width:568px){
-		.simply-section {
-    width: 49%;
-    float: left;
-}
 }
 @media(max-width:480px){
 	.ban-head h1 {
-    font-size: 2.8em;
-    letter-spacing: 2px;
-}
-span.simply-amount {
-    font-size: 2em;
-}
+        font-size: 2.8em;
+        letter-spacing: 2px;
+    }
 }
 @media(max-width:414px){
 	.ban-head h1 {
-    font-size: 2.5em;
-    letter-spacing: 2px;
-}
-.examples {
-    margin: 0em auto 0;
-}
-.ban-head h1 {
-    font-size: 2.2em;
-    letter-spacing: 2px;
-}
-.ban-head p {
-    font-size: 1.2em;
-}
-.ban-head {
-    margin: 2em 0 0 0;
-}
-.simply-section {
-    padding: 12% 0%;
-}
+        font-size: 2.5em;
+        letter-spacing: 2px;
+    }
+    .ban-head h1 {
+        font-size: 2.2em;
+        letter-spacing: 2px;
+    }
+    .ban-head p {
+        font-size: 1.2em;
+    }
+    
 }
 @media(max-width:384px){
+    .body {
+        overflow-x: hidden;
+    }
 }
 @media(max-width:320px){
-	.ban-head h1 {
-    font-size: 2em;
-    letter-spacing: 2px;
-   }
-   .examples {
-    width: 92%;
+    .body {
+        overflow-x: hidden;
     }
+	.ban-head h1 {
+        font-size: 2em;
+        letter-spacing: 2px;
+        overflow-x: hidden;
+   }
 }
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .body {
+        overflow-x: hidden;
+    }
+    .ban-head {
+        margin: -2em;
+        padding-bottom: 20px;
+        overflow-x: hidden;
+        
+    }
+    .ban-head h2 {
+        font-size: 1.5em;
+        color: #000;
+        letter-spacing: 1px;
+        overflow-x: hidden;
+    }
+    .ban-head h1 {
+        font-size: 2em;
+        color: #000;
+        letter-spacing: 10px;
+        font-family: 'Google Sans', sans-serif;
+        overflow-x: hidden;
+    }
+    .ban-head h3 {
+        font-size: 0.74em;
+        color: #000;
+        letter-spacing: 1px;
+        font-family: 'Google Sans', sans-serif;
+        overflow-x: hidden;
+    }
+    .dsc-logo {
+        margin-bottom: 15px;
+        max-width: 25%;
+        overflow-x: hidden;
+    }
+    .ban-head p {
+        font-size: 0.8em;
+        overflow-x: hidden;
     }
 }
 /*-- /responsive design --*/
