@@ -1,5 +1,5 @@
-
 /*--reset--*/
+
 html,
 body,
 div,
@@ -217,8 +217,8 @@ body {
 	font-family: 'Google Sans', sans-serif;
 	font-size: 100%;
 	background-attachment: fixed;
-    text-align: center;
-    overflow-x: hidden;
+	text-align: center;
+	overflow-x: hidden;
 }
 
 body a {
@@ -230,268 +230,298 @@ body a {
 }
 
 .containered {
-    width: 100%;
+	width: 100%;
 }
+
 
 /*--banner--*/
+
 .ban-head {
-    margin: -5em;
-    padding-bottom: 20px;
-    overflow-x: hidden;
-    
+	padding-bottom: 20px;
+	overflow-x: hidden;
 }
+
 .ban-head h2 {
-    font-size: 2.5em;
-    color: #000;
-    letter-spacing: 1px;
+	font-size: 2.5em;
+	color: #000;
+	letter-spacing: 1px;
 }
-.ban-head p {
-    padding-left: 60px;
-    padding-right: 60px;
-}
+
 .ban-head h1 {
-    font-size: 4em;
-    color: #000;
-    letter-spacing: 10px;
+	font-size: 4em;
+	color: #000;
+	letter-spacing: 10px;
 	font-family: 'Google Sans', sans-serif;
 }
+
 .ban-head h3 {
-    font-size: 1.27em;
-    color: #000;
-    letter-spacing: 1px;
-    font-family: 'Google Sans', sans-serif;
+	font-size: 1.27em;
+	color: #000;
+	letter-spacing: 1px;
+	font-family: 'Google Sans', sans-serif;
 }
+
 .bg-bg {
-    background: rgb(255, 255, 255);
-    min-height: 400px;
-    display: grid;
+	background: rgb(255, 255, 255);
+	min-height: 200px;
+	display: grid;
 }
+
 .dsc-logo {
-    margin-bottom: 25px;
-    max-width: 100%;
+	margin-bottom: 25px;
+	max-width: 100%;
 }
+
+
 /*--//banner--*/
+
+
 /*-- social-icons --*/
+
 .agileinfo-social-grids {
-    z-index: 999;
-    text-align: center;
-    margin-top: 100px;
-    padding-bottom: 30px;
+	z-index: 999;
+	text-align: center;
+	margin-top: 100px;
+	padding-bottom: 30px;
 }
+
 .agileinfo-social-grids ul {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
+
 .agileinfo-social-grids ul li {
-    display: inline-block;
-    margin: .5em 0;
+	display: inline-block;
+	margin: .5em 0;
 }
+
 .agileinfo-social-grids ul li a {
-    color: #FFFFFF;
-    text-align: center;
+	color: #FFFFFF;
+	text-align: center;
 }
-.agileinfo-social-grids ul li a i.fa.fa-twitter, .agileinfo-social-grids ul li a i.fa.fa-instagram, .agileinfo-social-grids ul li a i.fa.fa-github, .agileinfo-social-grids ul li a i.fa.fa-medium {
-     width: 30px;
-    height: 30px;
-    margin: 6px;
-    font-size: 20px;
-    line-height: 32px;
-    color: #000;
-    text-decoration: none;
-    text-shadow: none;
-    background: #fff;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-	    border: 2px solid transparent;
+
+.agileinfo-social-grids ul li a i.fa.fa-twitter,
+.agileinfo-social-grids ul li a i.fa.fa-instagram,
+.agileinfo-social-grids ul li a i.fa.fa-github,
+.agileinfo-social-grids ul li a i.fa.fa-medium {
+	width: 30px;
+	height: 30px;
+	margin: 6px;
+	font-size: 20px;
+	line-height: 32px;
+	color: #000;
+	text-decoration: none;
+	text-shadow: none;
+	background: #fff;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	border: 2px solid transparent;
 }
+
 .agileinfo-social-grids ul li a i.fa.fa-twitter:hover {
 	border: solid 2px #1da1f2;
-	background:#1da1f2;
-    color: #FFFFFF;
-}
-.agileinfo-social-grids ul li a i.fa.fa-instagram:hover{
-	border: solid 2px #f26b78;
-	background:#f26b78;
-	color: #FFFFFF;
-}
-.agileinfo-social-grids ul li a i.fa.fa-github:hover{
-	border: solid 2px #24292e;
-	background:#24292e;
+	background: #1da1f2;
 	color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-medium:hover{
-	border: solid 2px #000;
-	background:#000;
+.agileinfo-social-grids ul li a i.fa.fa-instagram:hover {
+	border: solid 2px #f26b78;
+	background: #f26b78;
 	color: #FFFFFF;
 }
+
+.agileinfo-social-grids ul li a i.fa.fa-github:hover {
+	border: solid 2px #24292e;
+	background: #24292e;
+	color: #FFFFFF;
+}
+
+.agileinfo-social-grids ul li a i.fa.fa-medium:hover {
+	border: solid 2px #000;
+	background: #000;
+	color: #FFFFFF;
+}
+
 
 /*-- //social-icons --*/
+
+
 /*-- footer --*/
-.footer{
-	padding:1em 1em 1em 1em;
+
+.footer {
+	padding: 1em 1em 1em 1em;
 	background: rgba(71, 71, 71, 0.28);
 }
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-  
+
 .column {
-    float: left;
-    text-align: left;
-    width: 33.33%;
-    padding: 30px 30px 30px 30px;
+	float: left;
+	text-align: left;
+	width: 33.33%;
+	padding: 30px 30px 30px 30px;
 }
 
 .row {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 a {
-    color: #000;
+	color: #000;
 }
 
 .sponsor-title {
-    font-size: 1.2em;
-    color:#8a8a8a
-
+	font-size: 1.2em;
+	color: #8a8a8a
 }
+
 
 /*-- //footer --*/
+
+
 /*-- /responsive design --*/
-@media(max-width:1440px){
-}
-@media(max-width:1366px){
-}
-@media(max-width:1280px){
-}
-@media(max-width:1080px){
-}
-@media(max-width:1024px){
-}
-@media(max-width:991px){
-}
-@media(max-width:800px){
+
+@media(max-width:1440px) {}
+
+@media(max-width:1366px) {}
+
+@media(max-width:1280px) {}
+
+@media(max-width:1080px) {}
+
+@media(max-width:1024px) {}
+
+@media(max-width:991px) {}
+
+@media(max-width:800px) {
 	.ban-head h1 {
-    font-size: 3.5em;
+		font-size: 3.5em;
+	}
+	.examples {
+		width: 80%;
+	}
 }
-.examples {
-    width: 80%;
-}
-}
-@media(max-width:768px){
-}
-@media(max-width:736px){
+
+@media(max-width:768px) {}
+
+@media(max-width:736px) {
 	.ban-head {
-        margin: 3em 0 0 0;
-        overflow-x: hidden;
-    }
+		margin: 3em 0 0 0;
+		overflow-x: hidden;
+	}
 }
-@media(max-width:667px){
-	.ban-head h1 {
-        font-size: 3.5em;
-        letter-spacing: 7px;
-        overflow-x: hidden;
-    }
 
-}
-@media(max-width:640px){
+@media(max-width:667px) {
 	.ban-head h1 {
-    font-size: 3em;
-    letter-spacing: 7px;
-    overflow-x: hidden;
+		font-size: 3.5em;
+		letter-spacing: 7px;
+		overflow-x: hidden;
+	}
 }
-}
-@media(max-width:600px){
 
-}
-@media(max-width:568px){
-}
-@media(max-width:480px){
+@media(max-width:640px) {
 	.ban-head h1 {
-        font-size: 2.8em;
-        letter-spacing: 2px;
-    }
+		font-size: 3em;
+		letter-spacing: 7px;
+		overflow-x: hidden;
+	}
 }
-@media(max-width:414px){
+
+@media(max-width:600px) {}
+
+@media(max-width:568px) {}
+
+@media(max-width:480px) {
 	.ban-head h1 {
-        font-size: 2.5em;
-        letter-spacing: 2px;
-    }
-    .ban-head h1 {
-        font-size: 2.2em;
-        letter-spacing: 2px;
-    }
-    .ban-head p {
-        font-size: 1.2em;
-    }
-    
+		font-size: 2.8em;
+		letter-spacing: 2px;
+	}
 }
-@media(max-width:384px){
-    .body {
-        overflow-x: hidden;
-    }
-}
-@media(max-width:320px){
-    .body {
-        overflow-x: hidden;
-    }
+
+@media(max-width:414px) {
 	.ban-head h1 {
-        font-size: 2em;
-        letter-spacing: 2px;
-        overflow-x: hidden;
-   }
+		font-size: 2.5em;
+		letter-spacing: 2px;
+	}
+	.ban-head h1 {
+		font-size: 2.2em;
+		letter-spacing: 2px;
+	}
+	.ban-head p {
+		font-size: 1.2em;
+	}
 }
+
+@media(max-width:384px) {
+	.body {
+		overflow-x: hidden;
+	}
+}
+
+@media(max-width:320px) {
+	.body {
+		overflow-x: hidden;
+	}
+	.ban-head h1 {
+		font-size: 2em;
+		letter-spacing: 2px;
+		overflow-x: hidden;
+	}
+}
+
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+	.column {
+		width: 100%;
+	}
 }
+
 @media screen and (max-width: 600px) {
-    .body {
-        overflow-x: hidden;
-    }
-    .ban-head {
-        margin: -2em;
-        padding-bottom: 20px;
-        overflow-x: hidden;
-        
-    }
-    .ban-head h2 {
-        font-size: 1.5em;
-        color: #000;
-        letter-spacing: 1px;
-        overflow-x: hidden;
-    }
-    .ban-head h1 {
-        font-size: 2em;
-        color: #000;
-        letter-spacing: 10px;
-        font-family: 'Google Sans', sans-serif;
-        overflow-x: hidden;
-    }
-    .ban-head h3 {
-        font-size: 0.74em;
-        color: #000;
-        letter-spacing: 1px;
-        font-family: 'Google Sans', sans-serif;
-        overflow-x: hidden;
-    }
-    .dsc-logo {
-        margin-bottom: 15px;
-        max-width: 25%;
-        overflow-x: hidden;
-    }
-    .ban-head p {
-        font-size: 0.8em;
-        overflow-x: hidden;
-    }
+	.body {
+		overflow-x: hidden;
+	}
+	.ban-head {
+		padding-bottom: 20px;
+		overflow-x: hidden;
+	}
+	.ban-head h2 {
+		font-size: 1.5em;
+		color: #000;
+		letter-spacing: 1px;
+		overflow-x: hidden;
+	}
+	.ban-head h1 {
+		font-size: 2em;
+		color: #000;
+		letter-spacing: 10px;
+		font-family: 'Google Sans', sans-serif;
+		overflow-x: hidden;
+	}
+	.ban-head h3 {
+		font-size: 0.74em;
+		color: #000;
+		letter-spacing: 1px;
+		font-family: 'Google Sans', sans-serif;
+		overflow-x: hidden;
+	}
+	.dsc-logo {
+		margin-bottom: 15px;
+		max-width: 25%;
+		overflow-x: hidden;
+	}
+	.ban-head p {
+		font-size: 0.8em;
+		overflow-x: hidden;
+	}
 }
+
+
 /*-- /responsive design --*/
