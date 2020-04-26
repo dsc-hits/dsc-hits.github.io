@@ -229,16 +229,12 @@ body a {
 	-ms-transition: 0.5s all;
 }
 
-.containered {
-	width: 100%;
-}
-
-
 /*--banner--*/
 
 .ban-head {
 	padding-bottom: 20px;
 	overflow-x: hidden;
+	margin-top: -6em;
 }
 
 .ban-head h2 {
@@ -436,9 +432,6 @@ a {
 	}
 }
 
-@media(max-width:600px) {}
-
-@media(max-width:568px) {}
 
 @media(max-width:480px) {
 	.ban-head h1 {
@@ -482,15 +475,13 @@ a {
 	.column {
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 600px) {
 	.body {
 		overflow-x: hidden;
 	}
 	.ban-head {
 		padding-bottom: 20px;
 		overflow-x: hidden;
+		margin-top: -3em;
 	}
 	.ban-head h2 {
 		font-size: 1.5em;
@@ -520,6 +511,9 @@ a {
 	.ban-head p {
 		font-size: 0.8em;
 		overflow-x: hidden;
+	}
+	.agileinfo-social-grids {
+		margin-top: 90px;
 	}
 }
 
