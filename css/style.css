@@ -299,7 +299,8 @@ body a {
 .agileinfo-social-grids ul li a i.fa.fa-twitter,
 .agileinfo-social-grids ul li a i.fa.fa-instagram,
 .agileinfo-social-grids ul li a i.fa.fa-github,
-.agileinfo-social-grids ul li a i.fa.fa-medium {
+.agileinfo-social-grids ul li a i.fa.fa-medium,
+.agileinfo-social-grids ul li a i.fa.fa-youtube-play {
 	width: 30px;
 	height: 30px;
 	margin: 6px;
@@ -336,6 +337,12 @@ body a {
 .agileinfo-social-grids ul li a i.fa.fa-medium:hover {
 	border: solid 2px #000;
 	background: #000;
+	color: #FFFFFF;
+}
+
+.agileinfo-social-grids ul li a i.fa.fa-youtube-play:hover {
+	border: solid 2px #ff0100;
+	background: #ff0100;
 	color: #FFFFFF;
 }
 
