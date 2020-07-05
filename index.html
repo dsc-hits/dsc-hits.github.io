@@ -282,7 +282,7 @@
    <script>
      function initFreshChat() {
        window.fcWidget.init({
-         token: $FChat_KEY,
+         token: ${{secrets.FChat_Key}},
          host: "https://wchat.in.freshchat.com"
        });
      }
