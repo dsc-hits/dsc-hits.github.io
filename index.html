@@ -281,8 +281,17 @@
    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <script>
      function initFreshChat() {
+        var key = "";
+        fetch('people.json')
+        .then(function (data) {
+          key = data.key;
+          return data.key
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
        window.fcWidget.init({
-         token: process.env['FChat_KEY'],
+         token: key,
          host: "https://wchat.in.freshchat.com"
        });
      }
