@@ -1,0 +1,4 @@
+- name: DSC HITS Pages
+  uses: JamesIves/github-pages-deploy-action@3.5.7
+  with:
+    fchat_key: ${{ secrets.FChat_KEY }}
