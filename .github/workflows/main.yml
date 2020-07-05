@@ -14,3 +14,4 @@ jobs:
         with:
           fchat_key: ${{ secrets.FChat_KEY }}
           BRANCH: master # The branch the action should deploy to.
+          FOLDER: dschits.github.io 
