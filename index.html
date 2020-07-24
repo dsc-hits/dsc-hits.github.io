@@ -236,6 +236,12 @@
                         Privacy Policy
                         </a>
                      </li>
+                     <br>
+                     <li>
+                        <a href="//dschits.freshdesk.com">
+                        Support/Helpdesk
+                        </a>
+                     </li>
                   </ul>
                </div>
             </div>
@@ -279,20 +285,4 @@
       </nav>
    </body>
    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   <script>
-     function code(dat) {
-       var str = '';
-       for (var i = 0; i < dat.length; i += 2) str += String.fromCharCode(parseInt(dat.substr(i, 2), 16));
-       return str;
-     }
-     var key = code('30353432383439652D646233372D346639302D613537302D663861623731616432393766');
-     
-     function initFreshChat() {
-       window.fcWidget.init({
-         token: key,
-         host: "https://wchat.in.freshchat.com"
-       });
-     }
-     function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-</script>
 </html>
