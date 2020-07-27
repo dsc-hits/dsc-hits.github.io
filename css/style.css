@@ -459,7 +459,11 @@ a {
 	.ban-head p {
 		font-size: 1.2em;
 	}
+	p {
+		font-size: 1.2em;
+	}
 }
+
 
 @media(max-width:384px) {
 	.body {
@@ -516,6 +520,10 @@ a {
 		overflow-x: hidden;
 	}
 	.ban-head p {
+		font-size: 0.8em;
+		overflow-x: hidden;
+	}
+	p {
 		font-size: 0.8em;
 		overflow-x: hidden;
 	}
