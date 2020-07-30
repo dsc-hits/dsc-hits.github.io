@@ -1,14 +1,7 @@
-var cacheName = 'DSC HITS';
+var cacheName = 'DSCHITS_home';
 var filesToCache = [
   '/',
   '/index.html',
-  'amp/index.html',
-  'exp-ml/',
-  'gcpcrashcourse/'
-  'gallery/index.html',
-  'join/index.html',
-  'omg/index.html',
-  'support/index.html',
   'css/style.css',
   'js/index.js',
   'assets/',
