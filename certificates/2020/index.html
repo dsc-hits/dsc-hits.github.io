@@ -2,23 +2,72 @@
 <html>
 
 <head>
+    <title>DSC HITS</title>
+    <link rel="shortcut icon"
+        href="https://www.gstatic.com/devrel-devsite/prod/va70c25da2af7c102a85bdfc215259d86fc5b2e57f33cbc810a173f52e333a7a1/developers/images/favicon.png">
+    <link rel="apple-touch-icon"
+        href="https://www.gstatic.com/devrel-devsite/prod/va70c25da2af7c102a85bdfc215259d86fc5b2e57f33cbc810a173f52e333a7a1/developers/images/touchicon-180.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta property="og:title" content="DSC HITS &nbsp;|&nbsp; Google Developers">
+    <meta name="description"
+        content="Developer Student Clubs train thousands of student developers globally and work with their communities to solve real-life problems">
+    <meta property="og:description"
+        content="Developer Student Clubs train thousands of student developers globally and work with their communities to solve real-life problems">
+    <meta property="og:url" content="https://dschits.in">
+    <meta property="og:locale" content="en">
+    <link href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Material+Icons" rel="stylesheet">
+    <!-- Linking JS Files -->
+    <script src="../../js/index.js"></script>
+    <style>
+        #certificate, .center {
+            margin: auto;
+            margin-top: 10%;
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Google Sans', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="certificate">
-        Click here if the page did not load the certificate</div>
+    <div class="center">
+        <input type="text" id="getValues" />
+        <input type="button" value="Search" onclick="send()" />
+    </div>
+    <div id="certificate"></div>
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const name = urlParams.get('name').toLowerCase().replace(/ /g, '_')
+    let name = urlParams.get('name')
     const members2020 = ['naveen_s', 'raj_kumar', "juhi_singh", "madhura_joshi", "devsen_datha", "ajai_danial"];
-    if (name && members2020.includes(name)) {
-        document.getElementById('certificate').innerHTML = ('<a href="../../assets/certificates/2020/'+name+'.pdf">Click here if the page did not load the certificate</a>');
-        window.location.replace('../../assets/certificates/2020/'+name+'.pdf');
+    function redirect(name) {
+        name = name.toLowerCase().replace(/ /g, '_')
+        if (members2020.includes(name)) {
+            window.location.assign('../../assets/certificates/2020/' + name + '.pdf','_blank');
+            document.getElementById('certificate').innerHTML = '<a href="../../assets/certificates/2020/' + name + '.pdf">Click here if the page did not load the certificate</a>';
+        }
+        else {
+            for (let i = 0; i < members2020.length; i++) {
+                if (members2020[i].split('_')[0] === name) {
+                    window.location.assign('../../assets/certificates/2020/' + members2020[i] + '.pdf', '_blank');
+                    document.getElementById('certificate').innerHTML = '<a href="../../assets/certificates/2020/' + members2020[i] + '.pdf">Click here if the page did not load the certificate</a>';
+                }
+            }
+        }
     }
-    else{
-        document.getElementById('certificate').innerHTML = ('Cannot find the certificate. Either the person was not part of the team or the name was wrong.');
+    if (name) {
+        redirect(name)
+        document.getElementById('certificate').innerHTML = 'Cannot find the certificate. Either the person was not part of the team in 2020 or the name was wrong.';
     }
+    function send() {
+        let userValue = getValues.value;
+        redirect(userValue)
+        document.getElementById('certificate').innerHTML = 'Cannot find the certificate. Either the person was not part of the team in 2020 or the name was wrong.';
+    }
+
 </script>
 </body>
 
