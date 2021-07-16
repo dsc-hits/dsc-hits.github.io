@@ -50,22 +50,26 @@
             document.getElementById('certificate').innerHTML = '<a href="../../assets/certificates/2020/' + name + '.pdf">Click here if the page did not load the certificate</a>';
         }
         else {
+            let found = false;
             for (let i = 0; i < members2020.length; i++) {
                 if (members2020[i].split('_')[0] === name) {
                     window.location.assign('../../assets/certificates/2020/' + members2020[i] + '.pdf', '_blank');
                     document.getElementById('certificate').innerHTML = '<a href="../../assets/certificates/2020/' + members2020[i] + '.pdf">Click here if the page did not load the certificate</a>';
+                    found = true;
+                    break;
                 }
+            }
+            if (!found) {
+                document.getElementById('certificate').innerHTML = 'Cannot find the certificate. Either the person was not part of the team in 2020 or the name was wrong.';
             }
         }
     }
     if (name) {
         redirect(name)
-        document.getElementById('certificate').innerHTML = 'Cannot find the certificate. Either the person was not part of the team in 2020 or the name was wrong.';
     }
     function send() {
         let userValue = getValues.value;
         redirect(userValue)
-        document.getElementById('certificate').innerHTML = 'Cannot find the certificate. Either the person was not part of the team in 2020 or the name was wrong.';
     }
 
 </script>
