@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="certificate">
+        Click here if the page did not load the certificate</div>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const name = urlParams.get('name').toLowerCase().replace(/ /g, '_')
+    const members2020 = ['naveen_s', 'raj_kumar', "juhi_singh", "madhura_joshi", "devsen_datha", "ajai_danial"];
+    if (name && members2020.includes(name)) {
+        document.getElementById('certificate').innerHTML = ('<a href="../../assets/certificates/2020/'+name+'.pdf">Click here if the page did not load the certificate</a>');
+        window.location.replace('../../assets/certificates/2020/'+name+'.pdf');
+    }
+    else{
+        document.getElementById('certificate').innerHTML = ('Cannot find the certificate. Either the person was not part of the team or the name was wrong.');
+    }
+</script>
+</body>
+
+</html>
