@@ -281,7 +281,16 @@ body a {
 	padding-bottom: 30px;
 }
 
+.team-social-grids {
+	text-align: center;
+}
+
 .agileinfo-social-grids ul {
+	padding: 0;
+	margin: 0;
+}
+
+.team-social-grids ul {
 	padding: 0;
 	margin: 0;
 }
@@ -291,7 +300,17 @@ body a {
 	margin: .5em 0;
 }
 
+.team-social-grids ul li {
+	display: inline-block;
+	margin: .5em 0;
+}
+
 .agileinfo-social-grids ul li a {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.team-social-grids ul li a {
 	color: #FFFFFF;
 	text-align: center;
 }
@@ -300,7 +319,14 @@ body a {
 .agileinfo-social-grids ul li a i.fa.fa-instagram,
 .agileinfo-social-grids ul li a i.fa.fa-github,
 .agileinfo-social-grids ul li a i.fa.fa-medium,
-.agileinfo-social-grids ul li a i.fa.fa-youtube-play {
+.agileinfo-social-grids ul li a i.fa.fa-youtube-play,
+.agileinfo-social-grids ul li a i.fa.fa-linkedin-square,
+.team-social-grids ul li a i.fa.fa-twitter,
+.team-social-grids ul li a i.fa.fa-instagram,
+.team-social-grids ul li a i.fa.fa-github,
+.team-social-grids ul li a i.fa.fa-medium,
+.team-social-grids ul li a i.fa.fa-youtube-play,
+.team-social-grids ul li a i.fa.fa-linkedin-square {
 	width: 30px;
 	height: 30px;
 	margin: 6px;
@@ -316,39 +342,100 @@ body a {
 	border: 2px solid transparent;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-twitter:hover {
+.agileinfo-social-grids ul li a i.fa.fa-twitter:hover,
+.team-social-grids ul li a i.fa.fa-twitter:hover {
 	border: solid 2px #1da1f2;
 	background: #1da1f2;
 	color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-instagram:hover {
+.agileinfo-social-grids ul li a i.fa.fa-instagram:hover,
+.team-social-grids ul li a i.fa.fa-instagram:hover {
 	border: solid 2px #f26b78;
 	background: #f26b78;
 	color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-github:hover {
+.agileinfo-social-grids ul li a i.fa.fa-github:hover,
+.team-social-grids ul li a i.fa.fa-github:hover {
 	border: solid 2px #24292e;
 	background: #24292e;
 	color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-medium:hover {
+.agileinfo-social-grids ul li a i.fa.fa-medium:hover,
+.team-social-grids ul li a i.fa.fa-medium:hover {
 	border: solid 2px #000;
 	background: #000;
 	color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-youtube-play:hover {
+.agileinfo-social-grids ul li a i.fa.fa-youtube-play:hover
+.team-social-grids ul li a i.fa.fa-youtube-play:hover {
 	border: solid 2px #ff0100;
 	background: #ff0100;
+	color: #FFFFFF;
+}
+
+.agileinfo-social-grids ul li a i.fa.fa-linkedin-square:hover
+.team-social-grids ul li a i.fa.fa-linkedin-square:hover {
+	border: solid 2px #055bcc;
+	background: #055bcc;
 	color: #FFFFFF;
 }
 
 
 /*-- //social-icons --*/
 
+.team-title h2 {
+	font-size: 2.5em;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+.team-cards {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.team-card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.team-card h1 {
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+.team-role { 
+  font-size: 0.9em;
+}
+
+.team-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.team-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.team-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.team-card {
+  padding: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  margin-bottom: 5px;
+}
 
 /*-- footer --*/
 
@@ -530,6 +617,18 @@ a {
 	.agileinfo-social-grids {
 		margin-top: 90px;
 	}
+	.team-title h2 {
+		font-size: 1.5em;
+		color: #000;
+		letter-spacing: 1px;
+		overflow-x: hidden;
+	}
+
+	.team-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 
